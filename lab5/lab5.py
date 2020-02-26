@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import random
 
+=======
+>>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
 def print_intro():
     print("Welcome to Camel!\n")
     print("In your desperation, you have stolen a camel to make your way")
@@ -11,6 +14,7 @@ miles_traveled = 0
 thirst = 0
 camel_tiredness = 0
 distance_traveled = -20
+<<<<<<< HEAD
 drinks_in_canteen = 3
 
 
@@ -24,6 +28,12 @@ def main():
     drinks_in_canteen = 3
     done = False
 
+=======
+
+
+def main():
+    done = False
+>>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
     while not done:
         print("A. Drink from your canteen.")
         print("B. Ahead moderate speed.")
@@ -33,6 +43,7 @@ def main():
         print("Q. Quit.")
         
         user_choice = input("Choice? ")
+<<<<<<< HEAD
         user_choice = user_choice.lower()
         if user_choice == "q":
             done = True
@@ -116,6 +127,15 @@ def main():
             Thank you for playing!
             """)
             done = True
+=======
+        if user_choice == "Q":
+            done = True
+
+
+    
+
+    print_intro()
+>>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
 
 if __name__ == '__main__':
     main()
