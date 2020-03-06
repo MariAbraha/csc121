@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import random
 
-=======
->>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
 def print_intro():
     print("Welcome to Camel!\n")
     print("In your desperation, you have stolen a camel to make your way")
@@ -10,17 +7,10 @@ def print_intro():
     print("The locals want their camel back and are chasing you down!")
     print("Survive your desert trek and out run the locals.")
 
-miles_traveled = 0
-thirst = 0
-camel_tiredness = 0
-distance_traveled = -20
-<<<<<<< HEAD
-drinks_in_canteen = 3
-
-
 def main():
     print_intro()
 
+    oasis = False
     miles_traveled = 0
     thirst = 0
     camel_tiredness = 0
@@ -28,12 +18,6 @@ def main():
     drinks_in_canteen = 3
     done = False
 
-=======
-
-
-def main():
-    done = False
->>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
     while not done:
         print("A. Drink from your canteen.")
         print("B. Ahead moderate speed.")
@@ -43,8 +27,8 @@ def main():
         print("Q. Quit.")
         
         user_choice = input("Choice? ")
-<<<<<<< HEAD
         user_choice = user_choice.lower()
+
         if user_choice == "q":
             done = True
         
@@ -70,7 +54,7 @@ def main():
             thirst += 1
             camel_tiredness += random.randrange(1, 3) 
             distance_traveled += random.randrange(7, 15) 
-            if random.randrange(20) == 0:
+        if random.randrange(20) == 0:
                 oasis = True
 
         elif user_choice == "b":
@@ -127,15 +111,7 @@ def main():
             Thank you for playing!
             """)
             done = True
-=======
-        if user_choice == "Q":
-            done = True
 
-
-    
-
-    print_intro()
->>>>>>> 4392693b7577cfcfaffcc3fc37df081f94d7dd44
 
 if __name__ == '__main__':
     main()
